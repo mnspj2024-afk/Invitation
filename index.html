@@ -1,21 +1,1434 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Undangan Reuni YAMIHI 2026 | Villa Sentul Sakala Home</title>
-    <meta name="description" content="Website Undangan Reuni YAMIHI 2026 di Villa Sentul Sakala Home. Sabtu, 21 November 2026. A Time to Reconnect, A Moment to Remember." />
-    <meta property="og:title" content="Undangan Reuni YAMIHI 2026" />
-    <meta property="og:description" content="A Time to Reconnect, A Moment to Remember. Reuni YAMIHI 2026 di Villa Sentul Sakala Home." />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Undangan Reuni YAMIHI 2026 | Villa Sentul Sakala Home</title>
+  <meta name="description" content="Website Undangan Reuni YAMIHI 2026 di Villa Sentul Sakala Home. Sabtu, 21 November 2026. A Time to Reconnect, A Moment to Remember." />
+  <meta property="og:title" content="Undangan Reuni YAMIHI 2026" />
+  <meta property="og:description" content="A Time to Reconnect, A Moment to Remember. Reuni YAMIHI 2026 di Villa Sentul Sakala Home." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
 
+  <!-- Google Fonts: Playfair Display + Plus Jakarta Sans + Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    :root {
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-hand: 'Caveat', cursive;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-sans);
+      color: #382d24;
+      background-color: #FAF7F2;
+    }
+
+    .font-serif-title {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    .font-handwriting {
+      font-family: 'Caveat', cursive;
+    }
+
+    /* Custom smooth scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F4EFEA;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #C4B5A5;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9A8877;
+    }
+
+    /* Subtle spinning vinyl disc animation */
+    @keyframes vinyl-spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-vinyl {
+      animation: vinyl-spin 4s linear infinite;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-[#FAF7F2] text-[#382D24] selection:bg-[#CCDBCF] selection:text-[#253828]">
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <header class="sticky top-0 z-40 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#E8DDCE]">
+    <div class="max-w-6xl mx-auto flex items-center justify-between gap-8 px-4 sm:px-6 py-3.5">
+      <!-- Zone 1: Brand wordmark -->
+      <a href="#" onclick="window.scrollTo({ top: 0, behavior: 'smooth' }); return false;" class="font-serif-title text-base sm:text-lg font-bold tracking-tight text-[#3B2E24] whitespace-nowrap shrink-0 hover:text-[#596E5C] transition-colors">
+        Reuni YAMIHI 2026
+      </a>
+
+      <!-- Zone 2: Single-line nav links -->
+      <nav class="hidden md:flex items-center gap-6 text-xs sm:text-sm font-medium text-[#6E5D4F]">
+        <a href="#invitation-letter-section" class="hover:text-[#3B2E24] transition-colors whitespace-nowrap shrink-0">Surat Undangan</a>
+        <a href="#villa-section" class="hover:text-[#3B2E24] transition-colors whitespace-nowrap shrink-0">Villa & Lokasi</a>
+        <a href="#biaya-section" class="hover:text-[#3B2E24] transition-colors whitespace-nowrap shrink-0">Biaya & Fasilitas</a>
+        <a href="#packing-section" class="hover:text-[#3B2E24] transition-colors whitespace-nowrap shrink-0">Checklist Barang</a>
+        <a href="#rsvp-form" class="hover:text-[#3B2E24] transition-colors whitespace-nowrap shrink-0">RSVP Kehadiran</a>
+      </nav>
+
+      <!-- Zone 3: Primary action -->
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="#rsvp-form" class="px-4 py-2 text-xs font-semibold text-white bg-[#596E5C] hover:bg-[#485A4A] rounded-full transition-colors whitespace-nowrap shrink-0 shadow-xs">
+          RSVP Sekarang
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= 01 — OPENING PAGE ================= -->
+  <section class="relative min-h-screen flex items-center justify-center px-4 py-12 md:py-20 overflow-hidden bg-gradient-to-b from-[#FDF5F2] via-[#FAF4ED] to-[#F5EFEB]">
+    <!-- Decorative background aura -->
+    <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-gradient-to-tr from-[#EED9D2]/40 via-[#E8EFE9]/50 to-[#EFE1D4]/40 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-4 right-8 w-32 h-32 bg-[#E2ECE3]/60 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="absolute bottom-8 left-8 w-44 h-44 bg-[#F7E7E2]/70 rounded-full blur-2xl pointer-events-none"></div>
+
+    <div class="relative w-full max-w-4xl mx-auto flex flex-col items-center z-10">
+      
+      <!-- Top Tagline (Tanpa tanggal, biaya, dan lokasi) -->
+      <div class="flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FAF6F0] border border-[#E3D6C8] shadow-xs text-xs font-medium text-[#657866] mb-4">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#B68D5D]"></i>
+        <span class="tracking-widest uppercase">Undangan Eksklusif Reuni 2026</span>
+      </div>
+
+      <!-- Main Title -->
+      <h1 class="font-serif-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center text-[#3B2E24] font-bold tracking-tight leading-tight max-w-3xl mb-3">
+        Selamat! Kamu diundang ke <span class="text-[#566D5B] italic font-serif">Reuni YAMIHI 2026</span>
+      </h1>
+      
+      <p class="font-sans text-sm sm:text-base md:text-lg text-center text-[#6E5D4F] max-w-xl mb-8 leading-relaxed">
+        A Time to Reconnect, A Moment to Remember 🏡✨
+      </p>
+
+      <!-- Envelope Showcase Container -->
+      <div class="relative w-full max-w-2xl bg-[#FFFDF9] rounded-2xl shadow-xl border border-[#E8DDD1] p-6 sm:p-9 md:p-11 transition-all duration-500">
+        
+        <!-- Vintage Envelope Postal Header (Tanpa tanggal, biaya, dan lokasi) -->
+        <div class="flex items-start justify-between border-b border-[#EFE5DA] pb-5 mb-6 gap-3">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-[#596E5C] text-[#FAF6F0] flex flex-col items-center justify-center shadow-xs border border-[#485B4B]">
+              <span class="text-[10px] font-bold tracking-widest leading-none">YAMIHI</span>
+              <span class="text-xs font-serif font-semibold mt-0.5">2026</span>
+            </div>
+            <div>
+              <div class="text-[11px] font-semibold tracking-wider text-[#8C7A6B] uppercase">Air Mail · Special Delivery</div>
+              <div class="text-xs text-[#524337] font-medium">Official Invitation Letter</div>
+            </div>
+          </div>
+
+          <!-- Vintage Stamp (Tanpa harga dan lokasi) -->
+          <div class="relative group shrink-0">
+            <div class="w-16 sm:w-20 h-20 sm:h-24 bg-[#FAF5EE] border-2 border-dashed border-[#CCA891] p-1.5 flex flex-col items-center justify-between text-center shadow-xs rotate-2 transition-transform duration-300 hover:rotate-0">
+              <span class="text-[9px] font-mono tracking-wider text-[#937C6C] uppercase">PAR AVION</span>
+              <div class="w-full flex-1 flex flex-col items-center justify-center bg-[#EBF0EC] rounded-xs my-0.5 border border-[#D5DFD7]">
+                <i data-lucide="heart" class="w-5 h-5 text-[#884B3B] fill-[#EACDC6]"></i>
+              </div>
+              <span class="text-[8px] font-semibold tracking-widest text-[#6E5D4F]">POSTAGE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recipient: Langsung KELUARGA BESAR YAMIHI -->
+        <div class="bg-[#F8F4ED] rounded-xl p-4 sm:p-5 border border-[#E3D7C9] mb-8 relative">
+          <div class="mb-1.5">
+            <span class="text-xs font-medium text-[#7A6A5C] uppercase tracking-wider">
+              Kepada Sahabat Tercinta:
+            </span>
+          </div>
+
+          <div class="flex items-baseline justify-between">
+            <div class="font-serif-title text-xl sm:text-2xl md:text-3xl font-bold text-[#32251B] tracking-tight">
+              KELUARGA BESAR YAMIHI
+            </div>
+            <span class="text-xs text-[#8A796B] italic font-handwriting text-base hidden sm:inline">
+              Special Guests
+            </span>
+          </div>
+        </div>
+
+        <!-- Polaroid Photos Preview -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8">
+          <!-- Polaroid 1: Friends Memories -->
+          <div class="bg-white p-3 pb-4 rounded-lg shadow-md border border-[#EBE3D7] transform -rotate-1 hover:rotate-0 transition-transform duration-300">
+            <div class="relative aspect-square w-full rounded overflow-hidden bg-[#F3ECE4]">
+              <img
+                src="./src/assets/images/polaroid_friends_1791869985491.jpg"
+                alt="Kenangan Teman YAMIHI"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.style.display='none'; document.getElementById('polaroid-fallback-1').style.display='flex';"
+              />
+              <div id="polaroid-fallback-1" style="display:none;" class="w-full h-full items-center justify-center bg-[#EAE2D8] text-[#5A4B3E] font-medium text-xs p-4 text-center">
+                Kenangan Indah Sahabat YAMIHI
+              </div>
+              <div class="absolute top-2 left-2 bg-[#FAF6F0]/90 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] font-medium text-[#4B3B2F] border border-[#E2D5C7]">
+                Kenangan Manis
+              </div>
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-handwriting text-lg text-[#44352A] leading-none">
+                Keluarga Besar YAMIHI ♡
+              </p>
+              <p class="text-[11px] text-[#867566] mt-0.5">Cerita yang tak pernah usai</p>
+            </div>
+          </div>
+
+          <!-- Polaroid 2: BBQ Night Preview -->
+          <div class="bg-white p-3 pb-4 rounded-lg shadow-md border border-[#EBE3D7] transform rotate-2 hover:rotate-0 transition-transform duration-300">
+            <div class="relative aspect-square w-full rounded overflow-hidden bg-[#F3ECE4]">
+              <img
+                src="./src/assets/images/polaroid_bbq_1791869985326.jpg"
+                alt="Malam BBQ Reuni Seru"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                onerror="this.style.display='none'; document.getElementById('polaroid-fallback-2').style.display='flex';"
+              />
+              <div id="polaroid-fallback-2" style="display:none;" class="w-full h-full items-center justify-center bg-[#EAE2D8] text-[#5A4B3E] font-medium text-xs p-4 text-center">
+                Malam BBQ & Api Unggun Hangat
+              </div>
+              <div class="absolute top-2 left-2 bg-[#FAF6F0]/90 backdrop-blur-xs px-2 py-0.5 rounded text-[10px] font-medium text-[#4B3B2F] border border-[#E2D5C7]">
+                Sunset BBQ & Chill
+              </div>
+            </div>
+            <div class="pt-2 text-center">
+              <p class="font-handwriting text-lg text-[#44352A] leading-none">
+                BBQ Party & Fun Games 🔥
+              </p>
+              <p class="text-[11px] text-[#867566] mt-0.5">Suasana hangat penuh tawa</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Buka Undangan -->
+        <div class="flex flex-col items-center justify-center pt-2">
+          <button
+            id="open-invite-btn"
+            class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#536854] via-[#5F7761] to-[#4D614E] text-[#FFFDF9] font-medium text-base sm:text-lg shadow-lg hover:shadow-xl hover:from-[#475A48] hover:to-[#415342] transition-all duration-300 transform active:scale-95 cursor-pointer border border-[#6B846D]"
+          >
+            <div class="w-8 h-8 rounded-full bg-[#8E4334] border border-[#A65B4C] flex items-center justify-center shadow-inner group-hover:rotate-12 transition-transform">
+              <i data-lucide="mail" class="w-4 h-4 text-[#FFF2EE]"></i>
+            </div>
+            <span class="tracking-wide font-serif">BUKA UNDANGAN</span>
+            <span class="text-xl">💌</span>
+          </button>
+
+          <p class="text-xs text-[#827263] mt-3 flex items-center gap-1.5">
+            <span>Klik tombol di atas untuk membuka surat</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 02 — THE INVITATION ================= -->
+  <section id="invitation-letter-section" class="relative min-h-screen py-16 px-4 flex items-center justify-center bg-gradient-to-b from-[#F5EFEB] via-[#FAF7F2] to-[#F3ECE4] overflow-hidden">
+    <div class="absolute top-1/4 right-5 w-72 h-72 bg-[#E3EDE4]/50 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 left-5 w-80 h-80 bg-[#F9E9DF]/40 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative w-full max-w-3xl mx-auto z-10">
+      
+      <!-- Editorial Indicator -->
+      <div class="text-center mb-6">
+        <span class="text-xs font-semibold uppercase tracking-widest text-[#667B68] bg-[#EBF1EC] px-3.5 py-1 rounded-full border border-[#D5E1D7]">
+          Surat Resmi Undangan
+        </span>
+      </div>
+
+      <!-- Letter Parchment Card -->
+      <div class="relative bg-[#FFFDF8] rounded-3xl shadow-2xl border border-[#E6D9CB] p-7 sm:p-12 md:p-16 transition-all">
+        
+        <div class="flex items-center justify-between border-b border-[#EFE4D6] pb-6 mb-8">
+          <div class="flex items-center gap-2">
+            <div class="w-2.5 h-2.5 rounded-full bg-[#596E5C]"></div>
+            <span class="text-xs tracking-widest uppercase font-semibold text-[#8C7A6A]">
+              The Official Letter
+            </span>
+          </div>
+          <div class="font-serif italic text-sm text-[#796758]">
+            Sentul, Bogor · 2026
+          </div>
+        </div>
+
+        <!-- Sapaan Multibahasa -->
+        <div class="text-center mb-8">
+          <div class="inline-flex items-center justify-center flex-wrap gap-2 sm:gap-3 bg-[#F6F0E7] px-4 py-2.5 rounded-2xl border border-[#E7DBCF] mb-4">
+            <span class="text-sm sm:text-base font-semibold text-[#382D24] flex items-center gap-1.5">
+              <span>🇰🇷</span> ANNYEONG!
+            </span>
+            <span class="text-[#C4B3A2]">·</span>
+            <span class="text-sm sm:text-base font-semibold text-[#382D24] flex items-center gap-1.5">
+              <span>🇨🇳</span> NI HAO!
+            </span>
+            <span class="text-[#C4B3A2]">·</span>
+            <span class="text-sm sm:text-base font-semibold text-[#382D24] flex items-center gap-1.5">
+              <span>🇯🇵</span> KONNICHIWA!
+            </span>
+          </div>
+
+          <h2 class="font-serif-title text-2xl sm:text-3xl md:text-4xl text-[#362A21] font-bold tracking-tight">
+            Salam hangat untuk seluruh keluarga YAMIHI! 💖
+          </h2>
+        </div>
+
+        <!-- Isi Surat Undangan -->
+        <div class="space-y-6 text-[#4F3F32] font-sans text-base sm:text-lg leading-relaxed sm:leading-loose">
+          <p class="first-letter:text-4xl first-letter:font-serif first-letter:font-bold first-letter:mr-2 first-letter:float-left first-letter:text-[#596E5C]">
+            Dengan penuh sukacita, kami mengundang teman-teman YAMIHI untuk hadir dalam acara <strong class="font-semibold text-[#2C2119]">Reuni YAMIHI 2026</strong>, sebuah kesempatan istimewa untuk kembali berkumpul, mempererat tali silaturahmi, berbagi cerita, dan menciptakan kenangan indah bersama.
+          </p>
+
+          <div class="p-5 sm:p-6 bg-[#F8F4ED]/80 rounded-2xl border border-[#EAE0D3] my-6">
+            <p class="italic text-[#46382D]">
+              "Mari sejenak meluangkan waktu dari kesibukan masing-masing untuk menikmati kebersamaan melalui berbagai kegiatan seru, mulai dari BBQ, makan bersama, games seru, hingga menikmati waktu santai di villa asri kawasan Sentul." 🥰
+            </p>
+          </div>
+
+          <p>
+            Kami sangat berharap kehadiran teman-teman dapat menambah kehangatan dan kemeriahan acara ini. Jadi, mari berkumpul kembali dan ciptakan momen yang berkesan bersama keluarga YAMIHI! 🫶🏻
+          </p>
+        </div>
+
+        <!-- Penutup Surat -->
+        <div class="mt-10 pt-8 border-t border-[#EFE4D6] flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div class="text-center sm:text-left">
+            <div class="text-xs uppercase tracking-widest text-[#857364] font-medium">Tertanda dengan cinta,</div>
+            <div class="font-handwriting text-2xl sm:text-3xl text-[#536854] font-bold mt-1">
+              Panitia Reuni YAMIHI 2026
+            </div>
+            <div class="text-xs text-[#8F7D6D] mt-0.5">A Time to Reconnect, A Moment to Remember</div>
+          </div>
+
+          <div class="flex items-center gap-3 bg-[#FAF6F0] px-4 py-2 rounded-2xl border border-[#E3D8CC]">
+            <div class="w-10 h-10 rounded-full bg-[#8E4334] text-[#FFFDF8] flex items-center justify-center font-serif font-bold text-xs shadow-inner">
+              YMH
+            </div>
+            <div class="text-left text-xs">
+              <div class="font-semibold text-[#3C2E24]">Villa Sakala Home</div>
+              <div class="text-[#7A6A5B]">21 Nov 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tombol Explore Details -->
+        <div class="mt-12 text-center">
+          <a
+            href="#details-section"
+            class="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#596E5C] hover:bg-[#4A5D4D] text-[#FFFDF8] font-medium text-sm sm:text-base shadow-md hover:shadow-lg transition-all duration-300 transform active:scale-95 cursor-pointer"
+          >
+            <span>Lihat Detail Acara, Lokasi & Biaya</span>
+            <i data-lucide="arrow-down" class="w-4 h-4 animate-bounce"></i>
+          </a>
+          <p class="text-xs text-[#8D7D6E] mt-2">
+            Villa Sentul, Google Maps, Biaya Rp400k, Fasilitas & Checklist Barang Bawaan
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 03 — THE REUNION DETAILS ================= -->
+  <section id="details-section" class="py-16 md:py-24 px-4 sm:px-6 bg-[#FAF7F2] text-[#362A21]">
+    <div class="max-w-5xl mx-auto space-y-16 sm:space-y-24">
+
+      <!-- SECTION 1: COUNTDOWN TIMER & INTRO -->
+      <div class="text-center space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EBF1EC] text-xs font-semibold uppercase tracking-wider text-[#546A56] border border-[#D5E1D7]">
+          <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+          <span>Menuju Reuni YAMIHI 2026</span>
+        </div>
+
+        <h2 class="font-serif-title text-3xl sm:text-4xl md:text-5xl font-bold text-[#32251B] tracking-tight">
+          A Time to Reconnect, A Moment to Remember
+        </h2>
+
+        <p class="text-sm sm:text-base text-[#6E5D4F] max-w-xl mx-auto">
+          Hitung mundur waktu berkumpul kembali di Villa Sentul Sakala Home pada Sabtu, 21 November 2026.
+        </p>
+
+        <!-- Countdown Boxes -->
+        <div class="grid grid-cols-4 gap-2.5 sm:gap-4 max-w-lg mx-auto pt-4">
+          <div class="bg-[#FFFDF9] border border-[#E5D7C9] rounded-2xl p-3 sm:p-4 shadow-sm text-center">
+            <div id="countdown-days" class="font-serif-title text-2xl sm:text-4xl font-bold text-[#4B5E4E] tabular-nums">0</div>
+            <div class="text-[11px] sm:text-xs uppercase tracking-wider font-medium text-[#847262] mt-1">Hari</div>
+          </div>
+          <div class="bg-[#FFFDF9] border border-[#E5D7C9] rounded-2xl p-3 sm:p-4 shadow-sm text-center">
+            <div id="countdown-hours" class="font-serif-title text-2xl sm:text-4xl font-bold text-[#4B5E4E] tabular-nums">00</div>
+            <div class="text-[11px] sm:text-xs uppercase tracking-wider font-medium text-[#847262] mt-1">Jam</div>
+          </div>
+          <div class="bg-[#FFFDF9] border border-[#E5D7C9] rounded-2xl p-3 sm:p-4 shadow-sm text-center">
+            <div id="countdown-minutes" class="font-serif-title text-2xl sm:text-4xl font-bold text-[#4B5E4E] tabular-nums">00</div>
+            <div class="text-[11px] sm:text-xs uppercase tracking-wider font-medium text-[#847262] mt-1">Menit</div>
+          </div>
+          <div class="bg-[#FFFDF9] border border-[#E5D7C9] rounded-2xl p-3 sm:p-4 shadow-sm text-center">
+            <div id="countdown-seconds" class="font-serif-title text-2xl sm:text-4xl font-bold text-[#4B5E4E] tabular-nums">00</div>
+            <div class="text-[11px] sm:text-xs uppercase tracking-wider font-medium text-[#847262] mt-1">Detik</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: VILLA INFORMATION & MAPS -->
+      <div id="villa-section" class="bg-[#FFFDF9] rounded-3xl border border-[#E8DDCE] shadow-xl overflow-hidden">
+        <!-- Hero Visual Header -->
+        <div class="relative h-64 sm:h-80 md:h-96 w-full overflow-hidden">
+          <img
+            src="./src/assets/images/villa_sakala_hero_1791869985995.jpg"
+            alt="Villa Sentul Sakala Home"
+            class="w-full h-full object-cover"
+            onerror="this.style.display='none'; document.getElementById('villa-hero-fallback').style.display='flex';"
+          />
+          <div id="villa-hero-fallback" style="display:none;" class="w-full h-full items-center justify-center bg-gradient-to-br from-[#596E5C] to-[#3B4D3E] text-white p-6 text-center">
+            Villa Sentul Sakala Home · Beautiful Hillside Villa
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-transparent flex flex-col justify-end p-6 sm:p-8">
+            <div class="flex items-center gap-2 text-white/90 text-xs sm:text-sm font-medium mb-1">
+              <i data-lucide="map-pin" class="w-4 h-4 text-[#A8C7AF]"></i>
+              <span>Sentul, Bogor, Jawa Barat</span>
+            </div>
+            <h3 class="font-serif-title text-2xl sm:text-3xl md:text-4xl font-bold text-white tracking-tight">
+              Villa Sentul Sakala Home
+            </h3>
+            <p class="text-white/80 text-xs sm:text-sm max-w-xl mt-1">
+              Villa privat asri dengan infinity pool, deck kayu jati, pemandangan bukit Sentul yang sejuk, dan suasana hangat untuk reconnect.
+            </p>
+          </div>
+        </div>
+
+        <!-- Detail Tempat & Foto Interior -->
+        <div class="p-6 sm:p-8 md:p-10 space-y-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            
+            <div class="space-y-4">
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-[#EBF1EC] text-[#546A56] flex items-center justify-center shrink-0">
+                  <i data-lucide="calendar" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs uppercase font-semibold text-[#8C7A6B] tracking-wider">
+                    Hari & Tanggal
+                  </div>
+                  <div class="text-base sm:text-lg font-semibold text-[#32251B]">
+                    Sabtu, 21 November 2026
+                  </div>
+                  <div class="text-xs text-[#736254]">
+                    Waktu Check-in: 14.00 WIB · Check-out: Minggu, 22 Nov 12.00 WIB
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-[#EBF1EC] text-[#546A56] flex items-center justify-center shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-xs uppercase font-semibold text-[#8C7A6B] tracking-wider">
+                    Alamat & Lokasi
+                  </div>
+                  <div class="text-base font-semibold text-[#32251B]">
+                    Villa Sentul Sakala Home
+                  </div>
+                  <div class="text-xs text-[#736254] leading-relaxed">
+                    Kawasan Perbukitan Sentul, Babakan Madang, Bogor, Jawa Barat
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Villa Interior Highlight -->
+            <div class="relative rounded-2xl overflow-hidden border border-[#E8DDCE] bg-[#F7F2EC] group">
+              <img
+                src="./src/assets/images/villa_living_lounge_1791869985905.jpg"
+                alt="Interior & Lounge Villa Sakala Home"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                onerror="this.style.display='none'; document.getElementById('interior-fallback').style.display='flex';"
+              />
+              <div id="interior-fallback" style="display:none;" class="w-full h-48 items-center justify-center bg-[#E5DDD2] text-[#4D3C2F] text-xs font-medium">
+                Living Area & Pool Deck Villa Sakala
+              </div>
+              <div class="p-3 bg-white/95 border-t border-[#E8DDCE] flex items-center justify-between">
+                <span class="text-xs font-medium text-[#4D3C2F]">Spacious Living & Pool Deck</span>
+                <span class="text-[11px] text-[#546A56] font-semibold">Private & Cozy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="pt-4 border-t border-[#EFE4D6] flex flex-wrap gap-3">
+            <a
+              href="https://maps.app.goo.gl/BrV8kxh1rgCfQ6Ut5"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#596E5C] hover:bg-[#485A4A] text-white text-xs sm:text-sm font-medium shadow-sm transition-all"
+            >
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+              <span>Buka di Google Maps</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5 ml-0.5 opacity-80"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/p/DeOrV2oyN01/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#FAF4ED] hover:bg-[#F3E8DC] text-[#7A4032] border border-[#DECFBD] text-xs sm:text-sm font-medium transition-all"
+            >
+              <i data-lucide="instagram" class="w-4 h-4 text-[#BA5A45]"></i>
+              <span>Lihat Referensi Villa Instagram</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5 ml-0.5 opacity-80"></i>
+            </a>
+
+            <a
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reuni+YAMIHI+2026&dates=20261121T070000Z/20261122T050000Z&details=Reuni+YAMIHI+2026+di+Villa+Sentul+Sakala+Home.+A+Time+to+Reconnect,+A+Moment+to+Remember!&location=Villa+Sentul+Sakala+Home"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[#FAF4ED] hover:bg-[#F3E8DC] text-[#362A21] border border-[#DECFBD] text-xs sm:text-sm font-medium transition-all"
+            >
+              <i data-lucide="calendar" class="w-4 h-4 text-[#596E5C]"></i>
+              <span>Simpan ke Google Calendar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: BIAYA KEIKUTSERTAAN & REKENING BCA -->
+      <div id="biaya-section" class="bg-[#FFFDF9] rounded-3xl border border-[#E8DDCE] shadow-xl p-6 sm:p-9 md:p-12">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-[#EFE4D6] pb-8">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EBF1EC] text-xs font-semibold uppercase tracking-wider text-[#546A56] mb-2">
+              <i data-lucide="dollar-sign" class="w-3.5 h-3.5"></i>
+              <span>Investasi Kebersamaan</span>
+            </div>
+            <h3 class="font-serif-title text-2xl sm:text-3xl font-bold text-[#32251B]">
+              Biaya Keikutsertaan
+            </h3>
+            <p class="text-sm text-[#736254] mt-1">
+              Biaya all-in transparan untuk seluruh akomodasi, konsumsi, dan keseruan acara.
+            </p>
+          </div>
+
+          <div class="bg-[#F8F4ED] border border-[#E2D5C6] rounded-2xl p-4 sm:p-5 text-right sm:text-left md:text-right shrink-0">
+            <div class="text-xs text-[#877565] uppercase font-semibold tracking-wider">
+              Tarif Per Orang
+            </div>
+            <div class="font-serif-title text-3xl sm:text-4xl font-bold text-[#4B5E4E] tracking-tight mt-0.5">
+              Rp400.000
+              <span class="text-sm font-sans font-normal text-[#736254]"> / orang</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fasilitas Inklusif -->
+        <div class="mt-8">
+          <h4 class="text-xs uppercase font-bold tracking-wider text-[#8A7869] mb-4">
+            Biaya tersebut sudah mencakup:
+          </h4>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="flex items-start gap-3 bg-[#FAF6F0] p-4 rounded-xl border border-[#EADBCC]">
+              <div class="w-8 h-8 rounded-lg bg-[#EBF1EC] text-[#546A56] flex items-center justify-center shrink-0">
+                <i data-lucide="waves" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-[#32251B]">Sewa Villa & Fasilitas Lengkap</div>
+                <div class="text-xs text-[#736254] mt-0.5">Private pool, living room ber-AC, kamar nyaman, dan gazebo santai.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 bg-[#FAF6F0] p-4 rounded-xl border border-[#EADBCC]">
+              <div class="w-8 h-8 rounded-lg bg-[#EBF1EC] text-[#546A56] flex items-center justify-center shrink-0">
+                <i data-lucide="utensils" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-[#32251B]">3 Kali Makan, Snack & Minuman</div>
+                <div class="text-xs text-[#736254] mt-0.5">Makan siang, makan malam lezat, sarapan pagi, snack sore & coffee break.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 bg-[#FAF6F0] p-4 rounded-xl border border-[#EADBCC]">
+              <div class="w-8 h-8 rounded-lg bg-[#EBF1EC] text-[#546A56] flex items-center justify-center shrink-0">
+                <i data-lucide="flame" class="w-4 h-4 text-[#BA5A45]"></i>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-[#32251B]">BBQ Night & Air Mineral Sepuasnya</div>
+                <div class="text-xs text-[#736254] mt-0.5">Daging panggang, sosis, jagung bakar bumbu spesial saat malam hari.</div>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 bg-[#FAF6F0] p-4 rounded-xl border border-[#EADBCC]">
+              <div class="w-8 h-8 rounded-lg bg-[#EBF1EC] text-[#546A56] flex items-center justify-center shrink-0">
+                <i data-lucide="sparkles" class="w-4 h-4 text-[#B88C5A]"></i>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-[#32251B]">Games, Hiburan & Biaya Kebersihan</div>
+                <div class="text-xs text-[#736254] mt-0.5">Hadiah kuis seru, perlengkapan games, sound system & maintenance villa.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kalkulator & Rekening Pembayaran BCA Saja -->
+        <div class="mt-8 pt-8 border-t border-[#EFE4D6] grid grid-cols-1 lg:grid-cols-2 gap-8">
+          
+          <!-- Kalkulator Simulasi Biaya -->
+          <div class="bg-[#FAF6F0] p-5 rounded-2xl border border-[#E5D7C7]">
+            <div class="text-xs uppercase font-semibold text-[#877565] tracking-wider mb-2">
+              Simulasi Biaya Pendaftaran
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-sm text-[#4E3E32] font-medium">Jumlah Peserta:</span>
+              <div class="flex items-center bg-white border border-[#D5C7B7] rounded-lg overflow-hidden">
+                <button
+                  id="calc-dec"
+                  class="px-3 py-1 text-sm font-bold text-[#596E5C] hover:bg-[#F3EFE9]"
+                >
+                  -
+                </button>
+                <span id="calc-pax-display" class="px-3 py-1 text-sm font-bold text-[#32251B] tabular-nums">
+                  1 orang
+                </span>
+                <button
+                  id="calc-inc"
+                  class="px-3 py-1 text-sm font-bold text-[#596E5C] hover:bg-[#F3EFE9]"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-[#E5D7C7] flex items-baseline justify-between">
+              <span class="text-xs text-[#736254]">Total Pembayaran:</span>
+              <span id="calc-total-display" class="font-serif-title text-xl font-bold text-[#4B5E4E]">
+                Rp400.000
+              </span>
+            </div>
+          </div>
+
+          <!-- Rekening Pembayaran: BCA - 6042095008 a.n Xinaretha Verra -->
+          <div class="space-y-3">
+            <div class="text-xs uppercase font-semibold text-[#877565] tracking-wider">
+              Rekening Pembayaran:
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-[#E5D7C7] flex items-center justify-between shadow-xs">
+              <div>
+                <div class="text-sm font-bold text-[#1B355B]">BCA · 6042095008</div>
+                <div class="text-xs text-[#524135] font-medium mt-0.5">a.n. Xinaretha Verra</div>
+              </div>
+              <button
+                id="copy-bca-btn"
+                onclick="copyToClipboard('6042095008', this)"
+                class="px-3 py-1.5 rounded-lg bg-[#FAF4ED] hover:bg-[#F3EBE1] text-[#4A3C31] text-xs font-medium flex items-center gap-1.5 border border-[#DFD1C1] transition-all cursor-pointer"
+              >
+                <i data-lucide="copy" class="w-3.5 h-3.5 text-[#596E5C]"></i>
+                <span>Salin Rekening</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION 4: PERLENGKAPAN YANG PERLU DIBAWA (INTERACTIVE CHECKLIST) -->
+      <div id="packing-section" class="bg-[#FFFDF9] rounded-3xl border border-[#E8DDCE] shadow-xl p-6 sm:p-9 md:p-12">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-[#EFE4D6] pb-6 mb-6">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EBF1EC] text-xs font-semibold uppercase tracking-wider text-[#546A56] mb-2">
+              <i data-lucide="shirt" class="w-3.5 h-3.5"></i>
+              <span>Travel Packing Checklist</span>
+            </div>
+            <h3 class="font-serif-title text-2xl sm:text-3xl font-bold text-[#32251B]">
+              Perlengkapan yang Perlu Dibawa
+            </h3>
+            <p class="text-sm text-[#736254] mt-0.5">
+              Centang barang yang sudah kamu siapkan agar liburan villa semakin nyaman dan tenang.
+            </p>
+          </div>
+
+          <!-- Progress Badge -->
+          <div class="bg-[#FAF6F0] p-3 rounded-2xl border border-[#E3D6C6] text-right sm:text-right shrink-0">
+            <div class="text-xs font-semibold text-[#806E5E]">Kesiapan Barang</div>
+            <div id="packing-progress-text" class="text-sm font-bold text-[#546A56] mt-0.5">
+              0 dari 6 Siap (0%)
+            </div>
+            <div class="w-32 bg-[#E6D9CB] h-1.5 rounded-full overflow-hidden mt-1.5 ml-auto">
+              <div id="packing-progress-bar" class="bg-[#596E5C] h-full transition-all duration-300" style="width: 0%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Packing List Grid -->
+        <div id="packing-list-container" class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+          <!-- Dynamically populated by JS -->
+        </div>
+
+        <!-- Add Custom Packing Item -->
+        <form id="add-packing-form" class="mt-6 pt-4 border-t border-[#EFE4D6] flex items-center gap-2">
+          <input
+            id="new-packing-input"
+            type="text"
+            placeholder="Tambahkan perlengkapan pribadi lainnya..."
+            class="flex-1 bg-white border border-[#D5C7B7] rounded-xl px-4 py-2.5 text-xs sm:text-sm text-[#3E3025] focus:outline-none focus:ring-2 focus:ring-[#596E5C]"
+          />
+          <button
+            type="submit"
+            class="bg-[#596E5C] hover:bg-[#485A4A] text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium flex items-center gap-1.5 transition-colors shrink-0 cursor-pointer"
+          >
+            <i data-lucide="plus" class="w-4 h-4"></i>
+            <span>Tambah</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- SECTION 5: RSVP & BUKU TAMU / PESAN KENANGAN -->
+      <div id="rsvp-form" class="bg-[#FFFDF9] rounded-3xl border border-[#E8DDCE] shadow-xl p-6 sm:p-9 md:p-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12">
+          
+          <!-- Form RSVP Column -->
+          <div class="lg:col-span-6 space-y-6">
+            <div>
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#EBF1EC] text-xs font-semibold uppercase tracking-wider text-[#546A56] mb-2">
+                <i data-lucide="send" class="w-3.5 h-3.5"></i>
+                <span>Konfirmasi Kehadiran</span>
+              </div>
+              <h3 class="font-serif-title text-2xl sm:text-3xl font-bold text-[#32251B]">
+                Buku Tamu & RSVP
+              </h3>
+              <p class="text-sm text-[#736254] mt-1">
+                Mohon konfirmasi kehadiranmu sebelum 10 November 2026 demi kelancaran akomodasi villa dan catering.
+              </p>
+            </div>
+
+            <form id="rsvp-submit-form" class="space-y-4">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-[#796758] mb-1.5">
+                  Nama Lengkap / Panggilan
+                </label>
+                <input
+                  id="rsvp-name-input"
+                  type="text"
+                  required
+                  placeholder="Contoh: Budi & Pasangan"
+                  class="w-full bg-white border border-[#D5C7B7] rounded-xl px-4 py-2.5 text-sm text-[#3E3025] focus:outline-none focus:ring-2 focus:ring-[#596E5C]"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-[#796758] mb-1.5">
+                  Status Kehadiran
+                </label>
+                <div class="grid grid-cols-3 gap-2">
+                  <button
+                    type="button"
+                    onclick="selectRsvpStatus('hadir')"
+                    id="btn-status-hadir"
+                    class="py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#596E5C] text-white border-[#485A4A] shadow-xs cursor-pointer"
+                  >
+                    Pasti Hadir ✨
+                  </button>
+                  <button
+                    type="button"
+                    onclick="selectRsvpStatus('ragu')"
+                    id="btn-status-ragu"
+                    class="py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#FAF6F0] text-[#4A3B30] border-[#D5C7B7] hover:bg-[#F3EFE9] cursor-pointer"
+                  >
+                    Masih Ragu 🤔
+                  </button>
+                  <button
+                    type="button"
+                    onclick="selectRsvpStatus('tidak_hadir')"
+                    id="btn-status-tidak_hadir"
+                    class="py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#FAF6F0] text-[#4A3B30] border-[#D5C7B7] hover:bg-[#F3EFE9] cursor-pointer"
+                  >
+                    Belum Bisa 🥺
+                  </button>
+                </div>
+              </div>
+
+              <div id="rsvp-pax-wrapper">
+                <label class="block text-xs font-semibold uppercase tracking-wider text-[#796758] mb-1.5">
+                  Jumlah Peserta
+                </label>
+                <select
+                  id="rsvp-pax-select"
+                  class="w-full bg-white border border-[#D5C7B7] rounded-xl px-4 py-2.5 text-sm text-[#3E3025] focus:outline-none focus:ring-2 focus:ring-[#596E5C]"
+                >
+                  <option value="1">1 Orang (Sendiri)</option>
+                  <option value="2">2 Orang (Bawa Pasangan / Teman)</option>
+                  <option value="3">3 Orang</option>
+                  <option value="4">4 Orang</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-[#796758] mb-1.5">
+                  Pesan / Doa / Harapan untuk Reuni YAMIHI
+                </label>
+                <textarea
+                  id="rsvp-message-input"
+                  rows="3"
+                  placeholder="Tuliskan ucapan kangen atau pesan hangatmu di sini..."
+                  class="w-full bg-white border border-[#D5C7B7] rounded-xl p-3 text-sm text-[#3E3025] focus:outline-none focus:ring-2 focus:ring-[#596E5C]"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full py-3.5 rounded-xl bg-[#596E5C] hover:bg-[#475A48] text-white font-medium text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <i data-lucide="check" class="w-4 h-4"></i>
+                <span>Kirim Konfirmasi Kehadiran</span>
+              </button>
+
+              <div id="rsvp-success-toast" style="display:none;" class="p-3 bg-[#EBF1EC] border border-[#B7D2BC] rounded-xl text-xs text-[#364939] font-medium text-center">
+                Terima kasih! Konfirmasi kehadiran dan ucapanmu telah berhasil dicatat. 💖
+              </div>
+            </form>
+          </div>
+
+          <!-- Message Board Column -->
+          <div class="lg:col-span-6 space-y-4">
+            <div class="flex items-center justify-between border-b border-[#EFE4D6] pb-3">
+              <div class="flex items-center gap-2">
+                <i data-lucide="heart" class="w-4 h-4 text-[#884B3B]"></i>
+                <span id="rsvp-count-title" class="text-xs font-bold uppercase tracking-wider text-[#796758]">
+                  Dinding Harapan & Ucapan Teman (2)
+                </span>
+              </div>
+            </div>
+
+            <div id="rsvp-list-container" class="space-y-3 max-h-[460px] overflow-y-auto pr-2">
+              <!-- Dynamically populated by JS -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SECTION 6: BAGIKAN KE WHATSAPP & FOOTER -->
+      <div class="bg-gradient-to-r from-[#536854] via-[#5F7761] to-[#4D614E] text-[#FAF6F0] rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-xl">
+        <h3 class="font-serif-title text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight">
+          Bagikan ke Sahabat YAMIHI Lainnya
+        </h3>
+        <p class="text-xs sm:text-sm text-[#E2EBE3] max-w-lg mx-auto">
+          Ajak teman-teman seangkatan dan keluarga YAMIHI untuk bergabung. Sebarkan kehangatan dan kebersamaan di grup WhatsApp kita!
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <button
+            onclick="shareToWhatsApp()"
+            class="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#FAF6F0] hover:bg-white text-[#4A5D4E] font-semibold text-sm sm:text-base shadow-lg transition-transform active:scale-95 cursor-pointer"
+          >
+            <i data-lucide="share-2" class="w-4 h-4 text-[#596E5C]"></i>
+            <span>Bagikan Undangan via WhatsApp</span>
+          </button>
+        </div>
+
+        <div class="pt-6 border-t border-white/20 text-xs text-[#D8E4DA] space-y-1">
+          <div>Panitia Reuni YAMIHI 2026 · Villa Sentul Sakala Home</div>
+          <div>A Time to Reconnect, A Moment to Remember 🏡✨</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FLOATING BACKGROUND MUSIC PLAYER ================= -->
+  <div class="fixed bottom-5 right-5 z-50 flex items-center gap-2">
+    <div 
+      id="audio-widget-capsule"
+      class="flex items-center gap-2.5 bg-[#FBF7F0]/95 backdrop-blur-md border border-[#D5C7B5] shadow-lg px-3 py-2 rounded-full transition-all duration-300 text-[#4A3B32]"
+    >
+      <button
+        id="toggle-music-btn"
+        onclick="toggleAudio()"
+        class="w-9 h-9 rounded-full flex items-center justify-center transition-all bg-[#D9CEBF] text-[#4A3B32] hover:bg-[#C8BAA7] cursor-pointer"
+        aria-label="Putar Musik Latar"
+        title="Putar Musik Latar"
+      >
+        <i id="music-disc-icon" data-lucide="play" class="w-4 h-4 ml-0.5"></i>
+      </button>
+
+      <button 
+        onclick="toggleAudioDetails()"
+        class="text-left hidden sm:block focus:outline-none cursor-pointer"
+      >
+        <div id="music-status-text" class="text-[11px] font-semibold text-[#8C7A6B] uppercase tracking-wider leading-none">
+          Musik Latar
+        </div>
+        <div class="text-xs font-serif text-[#4A3B32] font-medium leading-tight truncate max-w-[140px]">
+          Villa Sentul Breeze
+        </div>
+      </button>
+
+      <div id="audio-volume-panel" class="hidden flex items-center gap-2 pl-2 border-l border-[#D5C7B5]/60">
+        <button
+          onclick="toggleMute()"
+          id="mute-btn"
+          class="p-1 hover:text-[#596E5C] transition-colors cursor-pointer"
+          title="Bisukan"
+        >
+          <i id="volume-icon" data-lucide="volume-2" class="w-4 h-4"></i>
+        </button>
+        <input
+          id="volume-slider"
+          type="range"
+          min="0"
+          max="1"
+          step="0.05"
+          value="0.45"
+          oninput="changeVolume(this.value)"
+          class="w-16 h-1.5 accent-[#596E5C] bg-[#D9CEBF] rounded-lg cursor-pointer"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INLINE SINGLE-PAGE JAVASCRIPT ================= -->
+  <script>
+    /* ================= Web Audio API Synthesizer ================= */
+    class VillaSoundtrack {
+      constructor() {
+        this.ctx = null;
+        this.isPlaying = false;
+        this.masterGain = null;
+        this.timerId = null;
+        this.currentChordIndex = 0;
+        this.volume = 0.45;
+        this.chords = [
+          [174.61, 220.00, 261.63, 329.63, 392.00], // Fmaj7
+          [164.81, 196.00, 246.94, 293.66, 392.00], // Em7
+          [146.83, 220.00, 261.63, 349.23, 440.00], // Dm7
+          [130.81, 196.00, 261.63, 329.63, 392.00], // Cmaj7
+          [174.61, 220.00, 261.63, 329.63, 440.00], // Fmaj7/A
+          [196.00, 246.94, 293.66, 349.23, 440.00], // G7sus4
+          [130.81, 164.81, 196.00, 246.94, 329.63], // Cmaj9
+          [146.83, 174.61, 220.00, 261.63, 329.63], // Dm9
+        ];
+      }
+
+      initContext() {
+        if (!this.ctx) {
+          const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+          this.ctx = new AudioContextClass();
+          this.masterGain = this.ctx.createGain();
+          this.masterGain.gain.setValueAtTime(this.volume, this.ctx.currentTime);
+          this.masterGain.connect(this.ctx.destination);
+        }
+        if (this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+      }
+
+      playTone(freq, startTime, duration, type = 'triangle', vel = 0.12) {
+        if (!this.ctx || !this.masterGain) return;
+        const osc = this.ctx.createOscillator();
+        const noteGain = this.ctx.createGain();
+        const filter = this.ctx.createBiquadFilter();
+
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, startTime);
+
+        filter.type = 'lowpass';
+        filter.frequency.setValueAtTime(1400, startTime);
+        filter.frequency.exponentialRampToValueAtTime(600, startTime + duration);
+
+        noteGain.gain.setValueAtTime(0.0001, startTime);
+        noteGain.gain.linearRampToValueAtTime(vel, startTime + 0.04);
+        noteGain.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+
+        osc.connect(filter);
+        filter.connect(noteGain);
+        noteGain.connect(this.masterGain);
+
+        osc.start(startTime);
+        osc.stop(startTime + duration + 0.1);
+      }
+
+      scheduleBar() {
+        if (!this.isPlaying || !this.ctx) return;
+        const chord = this.chords[this.currentChordIndex];
+        this.currentChordIndex = (this.currentChordIndex + 1) % this.chords.length;
+
+        const now = this.ctx.currentTime;
+        const barDuration = 3.6;
+
+        this.playTone(chord[0], now + 0.02, 2.8, 'sine', 0.16);
+
+        chord.slice(1).forEach((note, index) => {
+          const delay = 0.35 + index * 0.45;
+          this.playTone(note, now + delay, 2.2, 'triangle', 0.09);
+        });
+
+        chord.slice(2).forEach((note, index) => {
+          const delay = 2.0 + index * 0.38;
+          this.playTone(note, now + delay, 1.8, 'triangle', 0.07);
+        });
+
+        if (Math.random() > 0.4) {
+          this.playTone(chord[chord.length - 1] * 1.5, now + 1.2, 2.5, 'sine', 0.03);
+        }
+
+        this.timerId = window.setTimeout(() => {
+          this.scheduleBar();
+        }, barDuration * 1000 - 100);
+      }
+
+      start() {
+        try {
+          this.initContext();
+          if (this.isPlaying) return;
+          this.isPlaying = true;
+          this.scheduleBar();
+          updateAudioUI(true);
+        } catch (e) {
+          console.log('Audio init blocked', e);
+        }
+      }
+
+      stop() {
+        this.isPlaying = false;
+        if (this.timerId) {
+          window.clearTimeout(this.timerId);
+          this.timerId = null;
+        }
+        updateAudioUI(false);
+      }
+
+      toggle() {
+        if (this.isPlaying) {
+          this.stop();
+        } else {
+          this.start();
+        }
+      }
+
+      setVolume(val) {
+        this.volume = Math.max(0, Math.min(1, val));
+        if (this.masterGain && this.ctx) {
+          this.masterGain.gain.setValueAtTime(this.volume, this.ctx.currentTime);
+        }
+      }
+    }
+
+    const soundTrack = new VillaSoundtrack();
+
+    function updateAudioUI(isPlaying) {
+      const btn = document.getElementById('toggle-music-btn');
+      const text = document.getElementById('music-status-text');
+      const discIcon = document.getElementById('music-disc-icon');
+      if (isPlaying) {
+        btn.className = "w-9 h-9 rounded-full flex items-center justify-center transition-all bg-[#596E5C] text-[#FAF6F0] shadow-sm hover:bg-[#4E6252] cursor-pointer";
+        discIcon.setAttribute('data-lucide', 'disc-3');
+        discIcon.classList.add('animate-vinyl');
+        discIcon.classList.remove('ml-0.5');
+        text.innerText = "Musik Aktif";
+        text.className = "text-[11px] font-semibold text-[#596E5C] uppercase tracking-wider leading-none";
+      } else {
+        btn.className = "w-9 h-9 rounded-full flex items-center justify-center transition-all bg-[#D9CEBF] text-[#4A3B32] hover:bg-[#C8BAA7] cursor-pointer";
+        discIcon.setAttribute('data-lucide', 'play');
+        discIcon.classList.remove('animate-vinyl');
+        discIcon.classList.add('ml-0.5');
+        text.innerText = "Musik Latar";
+        text.className = "text-[11px] font-semibold text-[#8C7A6B] uppercase tracking-wider leading-none";
+      }
+      lucide.createIcons();
+    }
+
+    function toggleAudio() {
+      soundTrack.toggle();
+    }
+
+    function toggleAudioDetails() {
+      const panel = document.getElementById('audio-volume-panel');
+      const capsule = document.getElementById('audio-widget-capsule');
+      if (panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        capsule.classList.add('pr-4');
+      } else {
+        panel.classList.add('hidden');
+        capsule.classList.remove('pr-4');
+      }
+    }
+
+    let isMuted = false;
+    let savedVol = 0.45;
+    function toggleMute() {
+      const slider = document.getElementById('volume-slider');
+      const volIcon = document.getElementById('volume-icon');
+      if (isMuted) {
+        isMuted = false;
+        soundTrack.setVolume(savedVol);
+        slider.value = savedVol;
+        volIcon.setAttribute('data-lucide', 'volume-2');
+      } else {
+        isMuted = true;
+        savedVol = parseFloat(slider.value) || 0.45;
+        soundTrack.setVolume(0);
+        slider.value = 0;
+        volIcon.setAttribute('data-lucide', 'volume-x');
+      }
+      lucide.createIcons();
+    }
+
+    function changeVolume(val) {
+      const v = parseFloat(val);
+      soundTrack.setVolume(v);
+      const volIcon = document.getElementById('volume-icon');
+      if (v === 0) {
+        isMuted = true;
+        volIcon.setAttribute('data-lucide', 'volume-x');
+      } else {
+        isMuted = false;
+        volIcon.setAttribute('data-lucide', 'volume-2');
+      }
+      lucide.createIcons();
+    }
+
+    /* ================= Open Invitation Action ================= */
+    document.getElementById('open-invite-btn').addEventListener('click', () => {
+      soundTrack.start();
+      const target = document.getElementById('invitation-letter-section');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+
+    /* ================= Countdown Timer ================= */
+    function updateCountdown() {
+      const targetDate = new Date('2026-11-21T14:00:00+07:00').getTime();
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      if (diff <= 0) {
+        document.getElementById('countdown-days').innerText = '0';
+        document.getElementById('countdown-hours').innerText = '00';
+        document.getElementById('countdown-minutes').innerText = '00';
+        document.getElementById('countdown-seconds').innerText = '00';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('countdown-days').innerText = days;
+      document.getElementById('countdown-hours').innerText = String(hours).padStart(2, '0');
+      document.getElementById('countdown-minutes').innerText = String(minutes).padStart(2, '0');
+      document.getElementById('countdown-seconds').innerText = String(seconds).padStart(2, '0');
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    /* ================= Pax Calculator ================= */
+    let currentCalcPax = 1;
+    document.getElementById('calc-dec').addEventListener('click', () => {
+      if (currentCalcPax > 1) {
+        currentCalcPax--;
+        renderCalc();
+      }
+    });
+    document.getElementById('calc-inc').addEventListener('click', () => {
+      currentCalcPax++;
+      renderCalc();
+    });
+
+    function renderCalc() {
+      document.getElementById('calc-pax-display').innerText = currentCalcPax + ' orang';
+      const total = currentCalcPax * 400000;
+      document.getElementById('calc-total-display').innerText = 'Rp' + total.toLocaleString('id-ID');
+    }
+
+    /* ================= Copy to Clipboard ================= */
+    function copyToClipboard(text, btnElement) {
+      navigator.clipboard.writeText(text).then(() => {
+        const originalHTML = btnElement.innerHTML;
+        btnElement.innerHTML = '<i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i><span class="text-emerald-700 font-semibold">Tersalin!</span>';
+        lucide.createIcons();
+        setTimeout(() => {
+          btnElement.innerHTML = originalHTML;
+          lucide.createIcons();
+        }, 2500);
+      });
+    }
+
+    /* ================= Packing Checklist ================= */
+    const DEFAULT_PACKING = [
+      { id: '1', name: 'Pakaian ganti secukupnya (2 hari 1 malam)', optional: false, packed: false },
+      { id: '2', name: 'Perlengkapan mandi & perawatan pribadi', optional: false, packed: false },
+      { id: '3', name: 'Pakaian renang & kacamata renang', optional: true, packed: false },
+      { id: '4', name: 'Charger HP atau power bank cadangan', optional: false, packed: false },
+      { id: '5', name: 'Jaket atau pakaian hangat (Sentul berhawa dingin malam hari)', optional: false, packed: false },
+      { id: '6', name: 'Obat-obatan pribadi atau vitamin harian', optional: false, packed: false },
+    ];
+
+    function getPackingList() {
+      try {
+        const saved = localStorage.getItem('yamihi_packing_list');
+        return saved ? JSON.parse(saved) : DEFAULT_PACKING;
+      } catch (e) {
+        return DEFAULT_PACKING;
+      }
+    }
+
+    function savePackingList(list) {
+      try {
+        localStorage.setItem('yamihi_packing_list', JSON.stringify(list));
+      } catch (e) {}
+    }
+
+    let packingItems = getPackingList();
+
+    function renderPackingList() {
+      const container = document.getElementById('packing-list-container');
+      container.innerHTML = '';
+
+      let packedCount = 0;
+      packingItems.forEach(item => {
+        if (item.packed) packedCount++;
+
+        const card = document.createElement('div');
+        card.className = `flex items-center justify-between p-3.5 rounded-xl border transition-all cursor-pointer select-none ${
+          item.packed
+            ? 'bg-[#EBF2EC] border-[#B7D2BC] text-[#364939]'
+            : 'bg-[#FAF6F0] border-[#E8DDCE] hover:border-[#D5C4B1] text-[#3F3126]'
+        }`;
+
+        card.onclick = () => {
+          item.packed = !item.packed;
+          savePackingList(packingItems);
+          renderPackingList();
+        };
+
+        const left = document.createElement('div');
+        left.className = 'flex items-center gap-3';
+        left.innerHTML = `
+          <i data-lucide="${item.packed ? 'check-circle-2' : 'circle'}" class="w-5 h-5 ${item.packed ? 'text-[#4D6D51]' : 'text-[#B2A08E]'} shrink-0"></i>
+          <div>
+            <span class="text-sm font-medium ${item.packed ? 'line-through text-[#6F8272]' : ''}">
+              ${item.name}
+            </span>
+            ${item.optional ? '<span class="ml-2 text-[10px] text-[#A67554] font-semibold bg-[#F9EFE7] px-1.5 py-0.5 rounded">Opsional</span>' : ''}
+          </div>
+        `;
+
+        card.appendChild(left);
+
+        // Delete button for custom items
+        if (parseInt(item.id) > 10) {
+          const delBtn = document.createElement('button');
+          delBtn.className = 'text-[#B29D8D] hover:text-red-700 p-1 cursor-pointer';
+          delBtn.innerHTML = '<i data-lucide="trash-2" class="w-4 h-4"></i>';
+          delBtn.onclick = (e) => {
+            e.stopPropagation();
+            packingItems = packingItems.filter(p => p.id !== item.id);
+            savePackingList(packingItems);
+            renderPackingList();
+          };
+          card.appendChild(delBtn);
+        }
+
+        container.appendChild(card);
+      });
+
+      const total = packingItems.length || 1;
+      const percent = Math.round((packedCount / total) * 100);
+      document.getElementById('packing-progress-text').innerText = `${packedCount} dari ${total} Siap (${percent}%)`;
+      document.getElementById('packing-progress-bar').style.width = percent + '%';
+      lucide.createIcons();
+    }
+
+    document.getElementById('add-packing-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = document.getElementById('new-packing-input');
+      const val = input.value.trim();
+      if (!val) return;
+      packingItems.push({
+        id: Date.now().toString(),
+        name: val,
+        optional: false,
+        packed: false
+      });
+      savePackingList(packingItems);
+      input.value = '';
+      renderPackingList();
+    });
+
+    renderPackingList();
+
+    /* ================= RSVP & Guestbook ================= */
+    const DEFAULT_RSVPS = [
+      {
+        id: 'rsvp-1',
+        name: 'Panitia Reuni YAMIHI',
+        status: 'hadir',
+        pax: 2,
+        message: 'Sudah tidak sabar kumpul bareng lagi di Villa Sakala Home! Sampai jumpa semua teman-teman tercinta! ❤️',
+        createdAt: 'Baru saja'
+      },
+      {
+        id: 'rsvp-2',
+        name: 'Kevin & Keluarga',
+        status: 'hadir',
+        pax: 2,
+        message: 'Pasti hadir! Siap bawa gitar dan bantu bakar-bakar BBQ nanti malam 🔥',
+        createdAt: '1 jam yang lalu'
+      }
+    ];
+
+    function getRsvps() {
+      try {
+        const saved = localStorage.getItem('yamihi_rsvps');
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          return parsed.filter(item => item.id !== 'rsvp-3' && !item.name.toLowerCase().includes('sarah amanda'));
+        }
+        return DEFAULT_RSVPS;
+      } catch (e) {
+        return DEFAULT_RSVPS;
+      }
+    }
+
+    function saveRsvps(list) {
+      try {
+        localStorage.setItem('yamihi_rsvps', JSON.stringify(list));
+      } catch (e) {}
+    }
+
+    let rsvpList = getRsvps();
+    let currentRsvpStatus = 'hadir';
+
+    function selectRsvpStatus(status) {
+      currentRsvpStatus = status;
+      const btnHadir = document.getElementById('btn-status-hadir');
+      const btnRagu = document.getElementById('btn-status-ragu');
+      const btnTidak = document.getElementById('btn-status-tidak_hadir');
+      const paxWrapper = document.getElementById('rsvp-pax-wrapper');
+
+      btnHadir.className = "py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#FAF6F0] text-[#4A3B30] border-[#D5C7B7] hover:bg-[#F3EFE9] cursor-pointer";
+      btnRagu.className = "py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#FAF6F0] text-[#4A3B30] border-[#D5C7B7] hover:bg-[#F3EFE9] cursor-pointer";
+      btnTidak.className = "py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#FAF6F0] text-[#4A3B30] border-[#D5C7B7] hover:bg-[#F3EFE9] cursor-pointer";
+
+      if (status === 'hadir') {
+        btnHadir.className = "py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#596E5C] text-white border-[#485A4A] shadow-xs cursor-pointer";
+        paxWrapper.style.display = 'block';
+      } else if (status === 'ragu') {
+        btnRagu.className = "py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#B48450] text-white border-[#9E7241] shadow-xs cursor-pointer";
+        paxWrapper.style.display = 'none';
+      } else {
+        btnTidak.className = "py-2 px-2 text-xs font-medium rounded-xl border text-center transition-all bg-[#8F5244] text-white border-[#7B4438] shadow-xs cursor-pointer";
+        paxWrapper.style.display = 'none';
+      }
+    }
+
+    function renderRsvps() {
+      const container = document.getElementById('rsvp-list-container');
+      container.innerHTML = '';
+      document.getElementById('rsvp-count-title').innerText = `Dinding Harapan & Ucapan Teman (${rsvpList.length})`;
+
+      rsvpList.forEach(item => {
+        const card = document.createElement('div');
+        card.className = "bg-[#FAF6F0] p-4 rounded-2xl border border-[#E8DDCE] space-y-2 hover:border-[#D5C4B1] transition-colors";
+
+        let badge = '';
+        if (item.status === 'hadir') {
+          badge = `<span class="text-[10px] bg-[#EBF1EC] text-[#546A56] px-2 py-0.5 rounded-full border border-[#D5E1D7]">Hadir (${item.pax || 1} pax)</span>`;
+        } else if (item.status === 'ragu') {
+          badge = '<span class="text-[10px] bg-[#F7EFE4] text-[#A67554] px-2 py-0.5 rounded-full border border-[#E9DAC8]">Masih Ragu</span>';
+        } else {
+          badge = '<span class="text-[10px] bg-[#F9ECE9] text-[#935245] px-2 py-0.5 rounded-full border border-[#E8D1CB]">Berhalangan</span>';
+        }
+
+        card.innerHTML = `
+          <div class="flex items-start justify-between">
+            <div>
+              <div class="font-semibold text-sm text-[#32251B] flex items-center gap-1.5 flex-wrap">
+                <span>${item.name}</span>
+                ${badge}
+              </div>
+              <div class="text-[11px] text-[#968474]">${item.createdAt || 'Baru saja'}</div>
+            </div>
+          </div>
+          <p class="text-xs sm:text-sm text-[#544336] italic font-sans leading-relaxed">
+            "${item.message}"
+          </p>
+        `;
+        container.appendChild(card);
+      });
+      lucide.createIcons();
+    }
+
+    document.getElementById('rsvp-submit-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const nameInput = document.getElementById('rsvp-name-input');
+      const msgInput = document.getElementById('rsvp-message-input');
+      const paxSelect = document.getElementById('rsvp-pax-select');
+
+      const name = nameInput.value.trim();
+      if (!name) return;
+
+      const newEntry = {
+        id: Date.now().toString(),
+        name: name,
+        status: currentRsvpStatus,
+        pax: parseInt(paxSelect.value) || 1,
+        message: msgInput.value.trim() || 'Semoga reuni berjalan lancar dan penuh kenangan indah!',
+        createdAt: 'Baru saja'
+      };
+
+      rsvpList.unshift(newEntry);
+      saveRsvps(rsvpList);
+      renderRsvps();
+
+      msgInput.value = '';
+      const toast = document.getElementById('rsvp-success-toast');
+      toast.style.display = 'block';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 4000);
+    });
+
+    renderRsvps();
+
+    /* ================= Share to WhatsApp ================= */
+    function shareToWhatsApp() {
+      const text = encodeURIComponent(
+        `💌 *UNDANGAN REUNI YAMIHI 2026*\n\n` +
+        `"A Time to Reconnect, A Moment to Remember" 🏡✨\n\n` +
+        `🏡 *Tempat:* Villa Sentul Sakala Home\n` +
+        `📅 *Tanggal:* Sabtu, 21 November 2026\n` +
+        `💰 *Biaya:* Rp400.000/orang (Villa, 3x Makan, BBQ, Games, Fasilitas Lengkap)\n\n` +
+        `📌 *Lokasi:* https://maps.app.goo.gl/BrV8kxh1rgCfQ6Ut5\n` +
+        `📸 *Referensi:* https://www.instagram.com/p/DeOrV2oyN01/\n\n` +
+        `Yuk buka undangan lengkapnya dan konfirmasi kehadiranmu!`
+      );
+      window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+    }
+
+    // Initialize all Lucide icons on page load
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
