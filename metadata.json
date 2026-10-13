@@ -1,0 +1,6 @@
+{
+  "name": "Undangan Reuni YAMIHI 2026",
+  "description": "Website undangan interaktif Reuni YAMIHI 2026 di Villa Sentul Sakala Home dengan tema villa getaway elegan, musik latar, detail acara, dan RSVP.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

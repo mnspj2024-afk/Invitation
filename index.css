@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-hand: 'Caveat', cursive;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: #382d24; /* deep warm espresso brown */
+    background-color: #FAF7F2; /* soft warm cream */
+  }
+}
+
+.font-serif-title {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom subtle parchment / texture background */
+.bg-cream-sand {
+  background-color: #FAF6F0;
+}
+
+.bg-sage-soft {
+  background-color: #EBF1EC;
+}
+
+.bg-sage-deep {
+  background-color: #4A5D4E;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4EFEA;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4B5A5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9A8877;
+}
+
+/* Envelope 3D fold simulation */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Stamp border styling */
+.stamp-border {
+  border: 2px dashed #B8A898;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
